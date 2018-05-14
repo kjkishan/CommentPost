@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!-- recycleview for the showing the post in the main page-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/MainPageRec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+    </android.support.v7.widget.RecyclerView>
+
+    <!--Floating action button for making the new post: -->
+
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        android:id="@+id/Fab"
+        android:layout_width="63dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

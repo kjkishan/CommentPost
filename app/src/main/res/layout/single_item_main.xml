@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFEB"
+    android:layout_margin="10dp" >
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Name"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/Post"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Post"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/Post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Time"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        app:layout_constraintEnd_toStartOf="@id/Comment"
+        android:id="@+id/EditPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="8dp"
+        android:background="#E91E63"
+        android:text="Edit Post"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Time" />
+
+    <Button
+
+        android:id="@+id/Comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:background="#E91E63"
+        android:text="Comment"
+        app:layout_constraintStart_toEndOf="@id/EditPost"
+        app:layout_constraintTop_toBottomOf="@+id/Time" />
+    <Button
+        android:layout_margin="10dp"
+        android:background="#E91E63"
+        android:id="@+id/Delete"
+        app:layout_constraintTop_toBottomOf="@+id/Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Comment"
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

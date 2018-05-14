@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRegistrationActivity">
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/userName"
+        android:hint="Enter Name"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputEditText
+        android:inputType="textEmailSubject"
+        android:id="@+id/userEmail"
+        android:hint="Email Id"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputEditText
+        android:inputType="phone"
+        android:id="@+id/userMobile"
+        android:hint="Mobile Number"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputEditText
+        android:inputType="textPassword"
+        android:id="@+id/userPassword"
+        android:hint="Password"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/userMobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputEditText
+        android:inputType="textPassword"
+        android:id="@+id/ConfirmPassword"
+        android:hint="Confirm Password"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_marginBottom="8dp"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConfirmPassword"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</android.support.constraint.ConstraintLayout>
